@@ -1,25 +1,27 @@
 {
-    "name": "laravellegends/pt-br-validator",
-    "description": "Uma biblioteca contendo validações de formatos Brasileiros, para o Laravel",
+    "name": "usinahub/ptBR-validator",
+    "description": "Uma biblioteca para o Laravel com validações brasileiras",
     "license" : "MIT",
     "authors": [
         {
+            "name": "Alcimar Carlos de L V e Aires",
+            "email": "alcimar@usina.tech",
             "name": "Wallace de Souza Vizerra",
             "email": "wallacemaxters@gmail.com"
         }
     ],
     "require": {
-        "illuminate/support": "^6.0 || ^7.0"
+        "illuminate/support": "^6.0|^7.0|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "LaravelLegends\\PtBrValidator\\": "src/pt-br-validator"
+            "UsinaHUB\\PtBRValidator\\": "src/ptBR-validator"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelLegends\\PtBrValidator\\ValidatorProvider"
+                "UsinaHUB\\PtBRValidator\\ValidatorProvider"
             ]
         }
     },
