@@ -1,6 +1,6 @@
-# Laravel 8 - Validações em Português
+# Laravel 8 - Validações Brasileiras em Português
 
-Biblioteca com validações brasileiras.
+Biblioteca com validações para CPF, CNPJ, Telefone com DDD, Placas do Mercosul e etc.
 
 
 ## Instalação
