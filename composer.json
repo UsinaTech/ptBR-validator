@@ -4,7 +4,7 @@
         "url": "https://github.com/UsinaTech/br-validator.git",
         "type": "git"
     },
-    "description": "Uma biblioteca para o Laravel com validações brasileiras",
+    "description": "Uma biblioteca de Validações Brasileiras para o Laravel",
     "license": "MIT",
     "authors": [{
         "name": "Alcimar Carlos de Lemos Vasconcelos e Aires",
