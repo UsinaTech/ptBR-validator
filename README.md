@@ -1,21 +1,20 @@
-# Laravel 6+ - Validações em Português
+# Laravel 8 - Validações em Português
 
-Esta é uma biblioteca com algumas validações brasileiras.
+Biblioteca com validações brasileiras.
 
-[![Build Status](https://travis-ci.org/LaravelLegends/pt-br-validator.svg?branch=master)](https://travis-ci.org/LaravelLegends/pt-br-validator)
 
 ## Instalação
 
 Navegue até a pasta do seu projeto, por exemplo:
 
 ```
-cd /etc/www/projeto
+cd /var/www/projeto
 ```
 
-E então execute:
+Execute:
 
 ```
-composer require laravellegends/pt-br-validator:6.*
+composer require usinahub/ptBR-validator
 ```
 
 Agora, para utilizar a validação, basta fazer o procedimento padrão do `Laravel`.
@@ -26,9 +25,9 @@ A diferença é que será possível usar os seguintes métodos de validação:
 
 *  **`celular_com_ddd`** - Valida se o campo está no formato (**`(99)99999-9999`** ou **`(99)9999-9999`** ou **`(99) 99999-9999`** ou **`(99) 9999-9999`**)
 
-* **`cnpj`** - Valida se o campo é um CNPJ válido. É possível gerar um CNPJ válido para seus testes utilizando o site [geradorcnpj.com](http://www.geradorcnpj.com/)
+* **`cnpj`** - Valida se o campo é um CNPJ válido. 
 
-* **`cpf`** - Valida se o campo é um CPF válido. É possível gerar um CPF válido para seus testes utilizando o site [geradordecpf.org](http://geradordecpf.org) 
+* **`cpf`** - Valida se o campo é um CPF válido.
 
 * **`data`** - Valida se o campo é uma data no formato `DD/MM/YYYY`<sup>*</sup>. Por exemplo: `31/12/1969`.
 
