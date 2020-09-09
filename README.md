@@ -14,7 +14,7 @@ cd /var/www/projeto
 Execute:
 
 ```
-composer require usinahub/br-validator
+composer require usinatech/br-validator
 ```
 
 Agora, para utilizar a validação, basta fazer o procedimento padrão do `Laravel`.
