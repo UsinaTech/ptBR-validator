@@ -1,27 +1,32 @@
 {
-    "name": "usinahub/ptBR-validator",
+    "name": "usinatech/br-validator",
+    "repositories": {
+        "url": "https://github.com/UsinaTech/br-validator.git",
+        "type": "git"
+    },
     "description": "Uma biblioteca para o Laravel com validações brasileiras",
-    "license" : "MIT",
-    "authors": [
-        {
-            "name": "Alcimar Carlos de L V e Aires",
-            "email": "alcimar@usina.tech",
-            "name": "Wallace de Souza Vizerra",
-            "email": "wallacemaxters@gmail.com"
-        }
-    ],
+    "license": "MIT",
+    "authors": [{
+        "name": "Alcimar Carlos de Lemos Vasconcelos e Aires",
+        "email": "alcimar@usina.tech"
+    }],
+    "type": "laravel-bundle",
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
     "require": {
         "illuminate/support": "^6.0|^7.0|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "UsinaHUB\\PtBRValidator\\": "src/ptBR-validator"
+            "UsinaTech\\BrValidator\\": "src/br-validator"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "UsinaHUB\\PtBRValidator\\ValidatorProvider"
+                "UsinaTech\\BrValidator\\ValidatorProvider"
             ]
         }
     },

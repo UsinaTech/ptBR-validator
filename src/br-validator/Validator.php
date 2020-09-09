@@ -1,6 +1,6 @@
 <?php 
 
-namespace LaravelLegends\PtBrValidator;
+namespace UsinaTech\BrValidator;
 
 use Illuminate\Validation\Validator as BaseValidator;
 
