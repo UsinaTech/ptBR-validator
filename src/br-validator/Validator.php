@@ -154,6 +154,47 @@ class Validator extends BaseValidator
     }
 
     /**
+     * Valida se o CPF ou CNPJ é válido
+     *
+     * @param string $attribute
+     * @param string $value
+     * @return boolean
+     */
+
+     protected function validateCpfCnpj($attribute, $value)
+     {
+         // Remove caracteres não numéricos
+         $cleanedValue = preg_replace('/\D/', '', $value);
+ 
+         // Verifica se o valor é um CPF válido
+         if (strlen($cleanedValue) == 11) {
+             $cpf = $cleanedValue;
+ 
+             // Realiza a validação do CPF
+ 
+             if (!$this->validateCpf($attribute, $cpf)) {
+                 return false;
+             }
+         }
+         // Verifica se o valor é um CNPJ válido
+         elseif (strlen($cleanedValue) == 14) {
+             $cnpj = $cleanedValue;
+ 
+             // Realiza a validação do CNPJ
+ 
+             if (!$this->validateCnpj($attribute, $cnpj)) {
+                 return false;
+             }
+         }
+         // Valor inválido
+         else {
+             return false;
+         }
+ 
+         return true;
+     }
+
+    /**
     * Valida se o CNH é válido
     * @param string $attribute
     * @param string $value
