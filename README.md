@@ -29,6 +29,8 @@ A diferença é que será possível usar os seguintes métodos de validação:
 
 * **`cpf`** - Valida se o campo é um CPF válido.
 
+* **`cpf_cnpj`** - Valida se o campo é um CPF ou CNPJ válido.
+
 * **`data`** - Valida se o campo é uma data no formato `DD/MM/YYYY`<sup>*</sup>. Por exemplo: `31/12/1969`.
 
 * **`formato_cnpj`** - Valida se o campo tem uma máscara de CNPJ correta (**`99.999.999/9999-99`**).
