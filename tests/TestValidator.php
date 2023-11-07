@@ -174,6 +174,36 @@ class TestValidator extends Orchestra\Testbench\TestCase
         $this->assertTrue($incorrect->fails()); 
     }
 
+    
+    public function testCpfCnpj()
+    {
+    $validCpf = \Validator::make(
+        ['cpf_cnpj' => '094.050.986-59'],
+        ['cpf_cnpj' => 'cpf-cnpj']
+    );
+
+    $validCnpj = \Validator::make(
+        ['cpf_cnpj' => '53.084.587/0001-20'],
+        ['cpf_cnpj' => 'cpf-cnpj']
+    );
+
+    $invalidCpf = \Validator::make(
+        ['cpf_cnpj' => '99800-1926'],
+        ['cpf_cnpj' => 'cpf-cnpj']
+    );
+
+    $invalidCnpj = \Validator::make(
+        ['cpf_cnpj' => '51.084.587/0001-20'],
+        ['cpf_cnpj' => 'cpf-cnpj']
+    );
+
+    $this->assertTrue($validCpf->passes());
+    $this->assertTrue($validCnpj->passes());
+    $this->assertTrue($invalidCpf->fails());
+    $this->assertTrue($invalidCnpj->fails());
+    }
+
+    
     public function testCnh()
     {
         $correct = \Validator::make(
